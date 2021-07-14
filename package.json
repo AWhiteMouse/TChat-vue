@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "preview": "vite preview",
+    "serve": "node server/index.ts"
   },
   "dependencies": {
     "axios": "^0.21.1",
