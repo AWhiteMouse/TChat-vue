@@ -284,6 +284,7 @@ export default defineComponent({
 
             // 接收到系统通知
             socket.on("joinNoticeSelf", function (message: NotifySelfMessage) {
+                console.log('joinNoticeSelf', message);
                 count.value = message.count;
                 id.value = message.id;
                 notify({
